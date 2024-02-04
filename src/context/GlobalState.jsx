@@ -1,5 +1,5 @@
 import { createContext, useReducer } from "react";
-import AppReducer from "./AppReducer";
+import { AppReducer } from "./AppReducer";
 
 const initialState = {
   transactions: [],
@@ -18,10 +18,10 @@ export const GlobalProvider = ({ children }) => {
     });
   }
 
-  function addTransaction(id) {
+  function addTransaction(transaction) {
     dispatch({
       type: "ADD_TRANSACTION",
-      payload: id,
+      payload: transaction,
     });
   }
 

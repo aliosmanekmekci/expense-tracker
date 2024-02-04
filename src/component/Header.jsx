@@ -1,6 +1,12 @@
-const Header = () => {
-  // eslint-disable-next-line react/prop-types
-  return <h2>Expence Tracker</h2>;
-};
+import { Heading, Box, Center } from "@chakra-ui/react";
 
-export default Header;
+export const Header = () => {
+  // eslint-disable-next-line react/prop-types
+  return (
+    <Center>
+      <Box>
+        <Heading mt={10}>Expence Tracker</Heading>
+      </Box>
+    </Center>
+  );
+};
